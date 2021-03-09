@@ -1,0 +1,11 @@
+h1 {
+   color:rgb(150, 32, 134);
+   padding-top: 150px;
+   background: linear-gradient(rgb(145, 142, 142), transparent 85%);
+}
+
+div {
+    display: block;
+
+}
+
