@@ -1,7 +1,23 @@
 h1 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   font-size: 4.5rem;
    color:rgb(150, 32, 134);
    padding-top: 150px;
-   background: linear-gradient(rgb(145, 142, 142), transparent 85%);
+   text-transform: uppercase;
+   font-weight: lighter;
+   line-height: 1.5;
+   text-shadow: 0 1px 1px rgb(109, 106, 106);
+   margin: 10px;
+}
+
+.main-header {
+    padding-top: ;
+    height: ;
+    background: linear-gradient
+
 }
 
 div {
