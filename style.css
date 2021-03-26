@@ -1,27 +1,36 @@
-h1 {
+h1, p {
     font-family:Arial, Helvetica, sans-serif;
+    color:rgb(150, 32, 134);
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 1.5;
+    text-shadow: 0 1px 1px rgb(121, 117, 117);
+    margin: 25px;
 }
 
 h1 {
-   font-size: 4.5rem;
-   color:rgb(150, 32, 134);
-   padding-top: 150px;
-   text-transform: uppercase;
-   font-weight: lighter;
-   line-height: 1.5;
-   text-shadow: 0 1px 1px rgb(109, 106, 106);
-   margin: 10px;
+   font-size: 4rem;
+   padding: 50px;
 }
 
 .main-header {
-    padding-top: ;
-    height: ;
-    background: linear-gradient
+    text-align: center;
+    background: linear-gradient(lightgray, transparent 50%), linear-gradient(0deg, #fff, transparent), url('img/caliperandprint.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 5%;
+}
 
+p {
+    font-size: 2rem;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: lightgray;
 }
 
 div {
-    display: block;
-
+    padding-top: 2%; 
 }
-

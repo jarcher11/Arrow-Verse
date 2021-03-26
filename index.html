@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Imported Bootstrap from a CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>Measurement Converter</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header id="top" class="main-header">
             <h1>Measurement Converter</h1>
-            <img src="https://st2.depositphotos.com/1756291/9411/i/950/depositphotos_94113094-stock-photo-bearing-and-caliper-on-the.jpg" alt="Mechanical Measurements">
+            <p>Simplicity is key</p>
         </header>
-        <div class="primary-content t-border">
+        
+        <div class="measurement">
+            <input type="text" placeholder="Input" id="input">
+            <span>=</span>
+            <input type="text" placeholder="Output" id="output">
             
+            <select name="length" id="measurement-selection">
+                
+            </select>
         </div>
-    
+
     </body>
 </html>
