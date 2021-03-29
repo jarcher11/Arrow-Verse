@@ -11,17 +11,30 @@
     <body>
         <header id="top" class="main-header">
             <h1>Measurement Converter</h1>
-            <p>Simplicity is key</p>
+            <p>A Coding Project</p>
         </header>
         
         <div class="measurement">
+            <select id="inputType">           
+                <option value="millimeter">Millimeters</option>
+                <option value="centimeter">Centimeters</option>
+                <option value="meter">Meters</option>
+                <option value="inch">Inches</option>
+            </select>
+
             <input type="text" placeholder="Input" id="input">
             <span>=</span>
             <input type="text" placeholder="Output" id="output">
             
-            <select name="length" id="measurement-selection">
-                
+            <select id="outputType">           
+                <option value="millimeter">Millimeters</option>
+                <option value="centimeter">Centimeters</option>
+                <option value="meter">Meters</option>
+                <option value="inch">Inches</option>
             </select>
+
+            <script src="formula.js"></script>
+
         </div>
 
     </body>

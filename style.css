@@ -31,6 +31,10 @@ body {
     background-color: lightgray;
 }
 
-div {
-    padding-top: 2%; 
+#inputType {
+    width: ;
+}
+
+#outputType {
+    margin-bottom: 2%;
 }
