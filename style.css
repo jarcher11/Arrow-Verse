@@ -10,7 +10,8 @@ h1, p {
 
 h1 {
    font-size: 4rem;
-   padding: 50px;
+   padding: 25px 0px;
+   margin: 0 auto;
 }
 
 .main-header {
@@ -31,10 +32,19 @@ body {
     background-color: lightgray;
 }
 
-#inputType {
-    width: ;
+.measurement {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 70%;
+    flex-direction: column;
+    height: 300px;
+
 }
 
-#outputType {
-    margin-bottom: 2%;
+@media(min-width: 800px) {
+    .measurement {
+        flex-direction: row;
+        height: auto;
+    }
 }

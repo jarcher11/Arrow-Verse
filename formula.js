@@ -3,9 +3,10 @@ var input = document.getElementById('input');
 var output = document.getElementById('output');
 var inputType = document.getElementById('inputType');
 var outputType = document.getElementById('outputType');
+var historyElement = document.getElementById('history');
 var inputTypeValue,outputTypeValue;
-
-//use the .addEventListener() to set up the function that will be called whenever the specified event is delivered to the target
+var worklog = [];
+//used the .addEventListener() to set up the function that will be called whenever the specified event is delivered to the target
 //add 'keyup' event to fire when key is released and add 'change' event so that it is fired for <input>, <select>, and <textarea> elements when an alteration to the element's value is committed by the user.
 input.addEventListener("keyup", theAnswer);
 inputType.addEventListener("change", theAnswer);
@@ -13,7 +14,22 @@ outputType.addEventListener("change", theAnswer);
 
 inputTypeValue = inputType.value;
 outputTypeValue = outputType.value;
-
+function logToWorklog(inputType, inputValue, outputType, outputValue){
+    var entry = {
+        inputType: inputType, 
+        inputValue: inputValue.toString(), 
+        outputType: outputType, 
+        outputValue: outputValue.toString()
+    };
+    worklog.push(entry);
+    historyElement.innerHTML = "";
+    for(var i = 0; i < worklog.length; i++){
+        var element = document.createElement('div');
+        var item = worklog[i]; 
+        element.innerText = `converted ${item.inputValue}${item.inputType} to ${item.outputValue}${item.outputType}`;
+        historyElement.appendChild(element)
+    }
+}
 function theAnswer(){
     inputTypeValue = inputType.value;
     outputTypeValue = outputType.value;
@@ -73,8 +89,12 @@ function theAnswer(){
 
         output.value = input.value
     }
-
+if(output.value && input.value) {
+    logToWorklog(inputTypeValue, input.value, outputTypeValue, output.value);
 }
+}
+
+
 
 
 
