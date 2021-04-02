@@ -14,6 +14,6 @@ The project works as converter for measurements such as meters, inches, millimet
 - Have a JavaScript loop created that displays HTML on my page. 
 
 ##Media Queries 
--For mobile phone to tablets (min-width: 769px) uses flex direction to format both <select> elements and <option> elements in a row formatting.
+-For mobile phone to tablets (min-width: 800px) uses flex direction to format both <select> elements and <option> elements in a row formatting.
 
--for the larger screen size (min-width: 770px), I have the select and option elements in a column setting across the page. With it is added padding and justify-content with center value to keep the elemnts closer / tighter together. The font and photo in the heading were made smaller so that they didn't take up the whole page. 
+-For the larger screen size (min-width: 1200px), I have the select and option elements in a column setting across the page. I added padding to the id:history so that it would give space between the value history that shows after you add an input and the <div> with the class:"measurement". Aligned the input and output placeholders to center. 
