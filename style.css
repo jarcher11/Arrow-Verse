@@ -38,7 +38,7 @@ body {
     margin: 0 auto;
     width: 60%;
     flex-direction: column;
-    height: 300px;
+    height: 200px;
 
 }
 
@@ -46,30 +46,37 @@ body {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 800px) {
     .measurement {
         flex-direction: row;
         height: auto;
     }
 }
 
-@media (min-width: 770px) {
-    .measurement {
+@media (min-width: 992px) {
+    select, option {
+        margin-bottom: 10px;
+        font-size: medium;
+    }
+
+    #history {
         padding: 5%;
-        width: 45%;
-        justify-content: center;
-        height: auto;
+        
     }
 
-    h1 {
-        font-size: 6vw;
+    span {
+        font-weight: bold;
+        width: auto;
+        font-size: large;
     }
 
-    p {
-        font-size: 3vw;
+    .measurement {
+        padding-top: 3%;
     }
-}
 
+   input {
+       text-align: center;
+   }
 
 
 

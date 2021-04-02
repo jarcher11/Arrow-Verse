@@ -26,7 +26,7 @@ function logToWorklog(inputType, inputValue, outputType, outputValue){
     for(var i = 0; i < worklog.length; i++){
         var element = document.createElement('div');
         var item = worklog[i]; 
-        element.innerText = `converted ${item.inputValue}${item.inputType} to ${item.outputValue}${item.outputType}`;
+        element.innerText = `converted ${item.inputValue} ${item.inputType} to ${item.outputValue} ${item.outputType}`;
         historyElement.appendChild(element)
     }
 }
