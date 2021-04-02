@@ -42,12 +42,39 @@ body {
 
 }
 
-@media (min-width: 800px) {
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
     .measurement {
         flex-direction: row;
         height: auto;
     }
 }
+
+@media (min-width: 770px) {
+    .measurement {
+        padding: 5%;
+        width: 45%;
+        justify-content: center;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+
+
+
+
+
 
 
 
